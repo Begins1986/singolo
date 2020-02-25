@@ -227,3 +227,101 @@ span {
     background-image: url(assets/img/chev-black.png);
     transition: all 1s;
 }
+.services {
+    margin-top: -21px;
+    height: 500px;
+    background-color: #f2f2f2;
+    color: #666d89;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: Lato-Bold, "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-top: 65px;
+}
+
+.serv_info p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: Lato-Light, "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-top: 28px;
+}
+
+.serv_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.serv_item-img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+    background-image: url(assets/img/pen@1X.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bulb {
+    background-image: url(assets/img/bulb@1X.png);
+}
+
+.heart {
+    background-image: url(assets/img/heart@1X.png);
+}
+
+.phone {
+    background-image: url(assets/img/phone@1X.png);
+}
+
+.bubble {
+    background-image: url(assets/img/bubble@1X.png);
+}
+
+.star {
+    background-image: url(assets/img/star@1X.png);
+}
+
+.serv_item {
+    height: 87px;
+    width: calc((100% - 40px) / 3);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+
+.serv_item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.serv_item-content {
+    width: calc(100% - 80px);
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Lato-Bold, "Lato";
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.serv_item-content p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 6px;
+}
