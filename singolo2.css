@@ -111,3 +111,73 @@
     background-image: url(assets/img/Project11.jpg);
     background-position: -35px -62px;
 }
+.about-us {
+    margin-top: -25px;
+    height: 736px;
+    border-bottom: 7px solid #FFFFFF;
+}
+
+.about-us_author {
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;  
+}
+.about-us_info h2{
+    padding-top: 69px;
+}
+.author_icon {
+    display: flex;
+    margin-top: 25px;
+}
+
+.icon {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #666D89;
+    border-radius: 50%;
+    margin-right: 7px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.author_name {
+    max-width: 301px;
+    margin-top: 10px;
+}
+.author_name p{
+    margin-top: 8px;
+}
+.icon-facebook{
+    background-image: url(assets/img/facebook1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon:hover{
+    background-color: #666D89; 
+    background-image: url(assets/img/facebook.svg);
+}
+
+.icon-google{
+    background-image: url(assets/img/google+1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-google:hover{ 
+    background-image: url(assets/img/google+.svg)
+}
+.icon-twitter{
+    background-image: url(assets/img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-twitter:hover{
+    background-image: url(assets/img/twitter1.svg)
+}
+.icon-linkedin{
+    background-image: url(assets/img/linkedin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-linkedin:hover{
+    background-image: url(assets/img/linkedin1.svg)
+}

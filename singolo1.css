@@ -227,7 +227,8 @@ span {
     background-image: url(assets/img/chev-black.png);
     transition: all 1s;
 }
-.services {
+.services,
+.about-us {
     margin-top: -30px;
     height: 500px;
     background-color: #f2f2f2;
@@ -245,7 +246,8 @@ h2 {
 }
 
 .serv_info p,
-.portfolio_info p {
+.portfolio_info p,
+.about-us_info p {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -317,7 +319,8 @@ h3 {
     margin-bottom: 0;
 }
 
-.serv_item-content p{
+.serv_item-content p,
+.author_name p{
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
