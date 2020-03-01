@@ -1,0 +1,113 @@
+.portfolio {
+    margin-top: -20px;
+    background-color: #2D303A;
+    height: 874px;
+    border-bottom: 7px solid #323746;
+}
+
+.portfolio_buttons {
+    margin-top: -8px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #767E9E;
+    border-radius: 5px;
+    margin-right: 7px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 6px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    color: #767E9E;
+}
+
+.portfolio_buttons .active {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.portfolio_works {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.portfolio_work {
+    display: block;
+    width: 221px;
+    height: 187px;
+    overflow: hidden;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio_works :nth-child(n+13) {
+    display: none
+}
+
+.work1 {
+    background-image: url(assets/img/Project.jpg);
+    background-position: center -10px;
+}
+
+.work2 {
+    background-image: url(assets/img/Project1.jpg);
+    background-position: -83px center;
+}
+
+.work3 {
+    background-image: url(assets/img/Project2.jpg);
+    background-position: -5px top;
+}
+
+.work4 {
+    background-image: url(assets/img/Project3.jpg);
+}
+
+.work5 {
+    background-image: url(assets/img/Project4.jpg);
+    background-position: center -15px;
+}
+
+.work6 {
+    background-image: url(assets/img/Project5.jpg);
+    
+}
+
+.work7 {
+    background-image: url(assets/img/Project6.jpg);
+    background-position: -28px -40px;
+}
+
+.work8 {
+    background-image: url(assets/img/Project7.jpg);
+    background-position: -25px -34px;
+}
+
+.work9 {
+    background-image: url(assets/img/Project8.jpg);
+}
+
+.work10 {
+    background-image: url(assets/img/Project9.jpg);
+     background-position: -140px -113px;
+}
+
+.work11 {
+    background-image: url(assets/img/Project10.jpg);
+    background-position: -140px -175px;
+}
+
+.work12 {
+    background-image: url(assets/img/Project11.jpg);
+    background-position: -35px -62px;
+}
