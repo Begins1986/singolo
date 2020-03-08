@@ -65,3 +65,30 @@ textarea {
 .colortext{
     color: #f48c8f;
 }
+.footer {
+    margin-top: -20px;
+    background-color: #2d303a;
+    height: 77px;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    color: #666D89;
+    font-family: "Lato";
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+.footer_icon{
+    display: flex;
+    margin-top: 23px;
+}
+.footer_icon .icon:last-child{
+    margin-right: 0;
+}
