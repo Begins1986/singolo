@@ -9,41 +9,54 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" >
             <div class="container">
                 <div class="nav">
                     <div class="nav_logo">
                         <h1>Singolo<span class="red">*</span></h1>
                     </div>
 
-                    <ul class="nav_menu">
-                        <li class="menu-item active"><a href="#">home</a></li>
-                        <li class="menu-item"><a href="#">services</a></li>
-                        <li class="menu-item"><a href="#">portfolio</a></li>
-                        <li class="menu-item"><a href="#">about</a></li>
-                        <li class="menu-item"><a href="#">contact</a></li>
+                    <ul class="nav_menu" id="menu">
+                        <li class="menu-item"><a href="#home" class="active">home</a></li>
+                        <li class="menu-item"><a href="#services">services</a></li>
+                        <li class="menu-item"><a href="#portfolio">portfolio</a></li>
+                        <li class="menu-item"><a href="#about">about</a></li>
+                        <li class="menu-item"><a href="#contact">contact</a></li>
                     </ul>
 
                 </div>
             </div>
         </header>
-        <section class="slider">
-            <div class="container">
-                <div class="iphone-vertical">
-                    <img src="assets/img/Cam.png" alt="mobile">
-                    <img src="assets/img/Shadow.png" alt="shadow" class="iphone-vertical-shadow">
-                    <div class="screen-vertical"></div>
+        <section class="slider" id="home">
+
+            <div class="item-container">
+                <div class="item_slider active">
+                    <div class="container">
+                        <div class="iphone-vertical" id="phone">
+                            <img src="assets/img/Shadow.png" alt="shadow" class="iphone-vertical-shadow">
+                            <img src="assets/img/Cam.png" alt="mobile" class="phone-ver">
+                            <div class="screen-vertical"></div>
+                        </div>
+                        <div class="iphone-horizontal" id="phone1">
+                            <img src="assets/img/Cam2.png" alt="" class="img-horizontal">
+                            <img src="assets/img/Shadow2.png" alt="" class="iphone-horizontal-shadow">
+                            <div class="screen-horizontal"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="iphone-horizontal">
-                    <img src="assets/img/Cam2.png" alt="" class="img-horizontal">
-                    <img src="assets/img/Shadow2.png" alt="" class="iphone-horizontal-shadow">
-                    <div class="screen-horizontal"></div>
+                <div class="item_slider">
+
+                    <img src="assets/img/Slider.jpg" alt="slider">
+
+
                 </div>
+
+
                 <div class="arrow-left"></div>
                 <div class="arrow-right"></div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="serv_info">
                     <h2>Our Services</h2>
@@ -107,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio_info">
                     <h2>Portfolio</h2>
@@ -132,14 +145,16 @@
                     <div class="portfolio_work work10"></div>
                     <div class="portfolio_work work11"></div>
                     <div class="portfolio_work work12"></div>
+                    <!--
                     <div class="portfolio_work work"></div>
                     <div class="portfolio_work work"></div>
                     <div class="portfolio_work work"></div>
                     <div class="portfolio_work work8"></div>
+-->
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="container">
                 <div class="about-us_info">
                     <h2>About Us</h2>
@@ -236,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="contact_info">
                     <h2>Get a Quote</h2>
@@ -244,13 +259,24 @@
                 </div>
                 <div class="contact_wrapper">
                     <div class="contact_form">
-                        <form action="">
-                            <input type="text" name="name" placeholder="Name (Required)" required>
-                            <input type="email" placeholder="Email (Required)" required>
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                            <input type="submit" value="Submit" class="colortext">
+                        <form action="" id="form">
+                            <input type="text" name="name" id="name" placeholder="Name (Required)" required>
+                            <input type="email" id="email" placeholder="Email (Required)" required>
+                            <input type="text" placeholder="Subject" id="subject">
+                            <textarea name="" id="text" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                            <input type="submit" value="Submit" class="colortext" id="submit">
+
                         </form>
+                        <div id="message_block" class="hidden">
+                            <div id="message">
+                                <p>Письмо отправлено</p>
+                                <p>Тема: <span id="result_subject"></span></p><br>
+                                <p>Описание: <span id="result_text"></span></p>
+                                <br>
+                                <button id="close_btn">OK</button>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="contact_information">
                         <h3>
@@ -289,6 +315,7 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
