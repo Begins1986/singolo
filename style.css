@@ -1309,3 +1309,23 @@ textarea {
     }
 
 }
+@media (max-width: 374px){
+    .services {
+        height: 1170px;
+    }
+    .serv_item {
+        height: 120px;
+    }
+    .portfolio{
+        height: 850px;
+    }
+    .button{
+        margin-top: 7px;
+    }
+    .about-us {
+        height: 1750px;
+    }
+    .contact {
+        height: 1050px;
+    }
+}
