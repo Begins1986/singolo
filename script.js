@@ -158,3 +158,20 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('message_block').classList.add('hidden');
     FORM.reset();
 });
+//Burger
+const BURGER=document.querySelector('.burger-menu');
+console.log(BURGER);
+function burgerMenu(selector) {
+    let menu = document.querySelector('.burger-menu');
+    let button = menu.querySelector('.nav_burger');
+    let overlay = menu.querySelector('.burger-menu_overlay');
+    button.addEventListener('click',(e)=>{
+        e.preventDefault();
+        toggleMenu();
+    });
+    overlay.addEventListener('click',()=>toggleMenu());
+    function toggleMenu(){
+        menu.classList.toggle('burger-menu_active');
+    }  
+}
+burgerMenu(BURGER);
